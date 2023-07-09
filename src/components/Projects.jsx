@@ -1,8 +1,10 @@
 import React from "react";
 
-// import image1 from "../assets/projects/p-10.png"
-// import image2 from "../assets/projects/p-11.png"
-// import image3 from "../assets/projects/p-12.png"
+import image1 from "../components/image/pp-10.png"
+import image2 from "../components/image/pp-11.png"
+import image3 from "../components/image/pp-12.png"
+
+
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -11,7 +13,7 @@ const Projects = () => {
       title: "MASTER CHEF",
       description:
         " Master-Chef is a single-page Chef-related Web application. ",
-      photo: "src/assets/projects/pp-10.png",
+      photo: image1,
       live_link: "https://assignment-10-330dc.web.app/",
       client_side: "https://github.com/RanaAhmed33/assss-010-client",
       server_side: "https://github.com/RanaAhmed33/as-10"
@@ -21,7 +23,7 @@ const Projects = () => {
       title: "LEARN WITH TOYS",
       description:
         "Learn-With-Toys is a single-page application.",
-      photo: "/src/assets/projects/pp-11.png",
+      photo: image2,
       live_link: "https://toys-assignment-a67ac.web.app/",
       client_side: "https://github.com/RanaAhmed33/asss-011-client",
       server_side: "https://github.com/RanaAhmed33/asssss-011-server"
@@ -31,7 +33,7 @@ const Projects = () => {
       title: "DRAWING SCHOOL",
       description:
         "Drawing-School is a  single-page MERN stack website.",
-      photo: "/src/assets/projects/pp-12.png",
+      photo: image3,
       live_link: "https://project12-9e59d.web.app/",
       client_side: "https://github.com/RanaAhmed33/ass-012-client",
       server_side: "https://github.com/RanaAhmed33/assign-12"
@@ -40,6 +42,7 @@ const Projects = () => {
 
 
   ];
+  console.log(projects);
   return (
     <div className="md:px-10 px-7 my-8" id="projects">
       <h1 className="text-rose-700 font-semibold text-5xl my-12">
